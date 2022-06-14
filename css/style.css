@@ -1,0 +1,29 @@
+*{
+    margin: 0;
+}
+
+body{
+    background-color: #000;
+    color: #fff;
+}
+
+.img_contenedor{
+    /* aumentamos alto y ancho por un lapso*/
+    transition: width 2s, height 2s, transform 2s ;
+    -moz-transition: width 2s, height 2s, -moz-transform 2s;
+    -webkit-transition: width 2s, height 2s, -webkit-transform 2s;
+    -o-transition: width 2s, height 2s, -o-transform 2s;
+}/*esto me parecee que no hace nada, que ond?*/
+
+.img_contenedor:hover{
+transform: scale(2);
+-moz-transform: scale(2);
+-webkit-transform: scale(2);
+-o-transform: scale(2);
+}
+
+.img_contenedor{
+    width: 600px;
+    height: 700px;
+    overflow: hidden;
+}
